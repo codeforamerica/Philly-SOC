@@ -164,7 +164,7 @@ if ( ! is_multisite() ) {
 			_e('Permalink structure updated');
 	} else {
 		if ( $permalink_structure && ! $usingpi && ! $writable )
-			_e('You should update your .htaccess now.');
+			_e('PHP Fog has updated your .htaccess file.');
 		else
 			_e('Permalink structure updated.');
 	}
