@@ -88,3 +88,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** allows users to upgrade/add plugins without it asking for ftp credentials **/
+define('FS_METHOD', 'direct');
