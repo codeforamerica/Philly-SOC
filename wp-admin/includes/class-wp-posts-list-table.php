@@ -310,6 +310,8 @@ class WP_Posts_List_Table extends WP_List_Table {
 		if ( empty( $posts ) )
 			$posts = $wp_query->posts;
 
+		add_filter( 'the_title', 'esc_html' );
+
 		if ( $this->hierarchical_display ) {
 			$this->_display_rows_hierarchical( $posts, $this->get_pagenum(), $per_page );
 		} else {
@@ -319,8 +321,6 @@ class WP_Posts_List_Table extends WP_List_Table {
 
 	function _display_rows( $posts ) {
 		global $post, $mode;
-
-		add_filter( 'the_title', 'esc_html' );
 
 		// Create array of post IDs.
 		$post_ids = array();
@@ -522,7 +522,6 @@ class WP_Posts_List_Table extends WP_List_Table {
 						}
 					}
 
-					$post->post_title = esc_html( $post->post_title );
 					$pad = str_repeat( '&#8212; ', $level );
 ?>
 			<td <?php echo $attributes ?>><strong><?php if ( $can_edit_post && $post->post_status != 'trash' ) { ?><a class="row-title" href="<?php echo $edit_link; ?>" title="<?php echo esc_attr( sprintf( __( 'Edit &#8220;%s&#8221;' ), $title ) ); ?>"><?php echo $pad; echo $title ?></a><?php } else { echo $pad; echo $title; }; _post_states( $post ); echo isset( $parent_name ) ? ' | ' . $post_type_object->labels->parent_item_colon . ' ' . esc_html( $parent_name ) : ''; ?></strong>
