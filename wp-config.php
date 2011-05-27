@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'philly-phpfogapp-com');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'admin-6471');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'code4america');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db01-share');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '0.159605885797221');
+define('SECURE_AUTH_KEY',  '0.159605885797221');
+define('LOGGED_IN_KEY',    '0.159605885797221');
+define('NONCE_KEY',        '0.159605885797221');
+define('AUTH_SALT',        '0.159605885797221');
+define('SECURE_AUTH_SALT', '0.159605885797221');
+define('LOGGED_IN_SALT',   '0.159605885797221');
+define('NONCE_SALT',       '0.159605885797221');
 
 /**#@-*/
 
@@ -64,12 +64,12 @@ $table_prefix  = 'wp_';
 /**
  * WordPress Localized Language, defaults to English.
  *
- * Change this to localize WordPress.  A corresponding MO file for the chosen
+ * Change this to localize WordPress. A corresponding MO file for the chosen
  * language must be installed to wp-content/languages. For example, install
- * de.mo to wp-content/languages and set WPLANG to 'de' to enable German
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
  * language support.
  */
-define ('WPLANG', '');
+define('WPLANG', '');
 
 /**
  * For developers: WordPress debugging mode.
@@ -88,3 +88,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/** allows users to upgrade/add plugins without it asking for ftp credentials **/
+define('FS_METHOD', 'direct');
