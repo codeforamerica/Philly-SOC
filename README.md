@@ -1,1 +1,1 @@
-[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/github_tracker.png)](http://stats.codeforamerica.org/projects/github_tracker)
+[![Code for America Tracker](http://stats.codeforamerica.org/codeforamerica/Philly-SOC.png)](http://stats.codeforamerica.org/projects/Philly-SOC)
