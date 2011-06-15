@@ -1,0 +1,153 @@
+/*  
+
+Theme Name: Accomplish
+
+Description: Designed and developed to act as a minimal approach to delivering the accomplishments of Philadelphia Mayor Michael Nutter and his staff. This theme was proudly created by <a href="http://codeforamerica.org/">Code for America</a>. 
+
+Version: 1.0
+
+Author: Pete Fecteau
+
+Author URI: http://codeforamerica.org/
+
+Tags: white, two-columns, threaded-comments, sticky-post, fixed-width, minimal
+
+
+
+	Acomplish v1.0
+
+	http://codeforamerica/projects/
+
+	
+
+	This theme was designed and built by Code for America,
+
+	whose blog you will find at http://codeforamerica.org/blog
+
+
+
+	The CSS, XHTML and design is released under GPL:
+
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+* {
+	margin:0;
+	padding:0;
+	}
+a:link, a:visited {
+	color:#b5121b;
+	text-decoration:none;
+	}
+a:hover, a:active {
+	text-decoration:underline;
+	}
+body {
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:12px;
+	line-height:150%;
+	}
+#wrapper {
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-500px;
+	background:url(header.png) no-repeat top left;
+	padding:240px 20px 0 20px;
+	}
+#content {
+	border:10px #CCC solid;
+	padding:20px 10px;
+	width:620px;
+	float:left;
+	margin-right:20px;
+	margin-bottom:20px;
+	}
+.post {
+	border-bottom:#999 1px dotted;
+	margin-bottom:20px;
+	}
+h2.post-title {
+	margin-bottom:10px;
+	}
+a.post-title-link:link, a.post-title-link:visited {
+	color:#004990;
+	font-size:24px;
+	text-decoration:none;
+	}	
+a.post-title-link:hover, a.post-title-link:active {
+	color:#004990;
+	font-size:24px;
+	text-decoration:underline;
+	}
+.post-meta {
+	margin-bottom:10px;
+	}	
+.entry {
+	margin-bottom:10px;
+	}
+.post-comments {
+	margin-bottom:20px;
+	}
+textarea#comment {
+	width:620px;
+	margin-bottom:10px;
+	}
+
+#block {
+	width:280px;
+	height:60px;
+	float:left;
+	}
+#sidebar {
+	width:280px;
+	float:left;
+	}
+#sidebar h3 {
+	padding:5px 10px;
+	background-color:#b5121b;
+	color:#FFF;
+	margin: 0 0 20px 0;
+	}
+#sidebar h4 {
+	padding:5px 10px;
+	background-color:#999;
+	color:#FFF;
+	margin: 0 0 20px 0;
+	}
+#sidebar ul {
+	list-style:none;
+	margin:0 0 20px 10px;
+	line-height:200%;
+	}
+#nav a {
+	font-size:14px;
+	font-weight:bold;
+	color:#333;
+	text-decoration:none;
+	}
+#nav a:hover, #nav a:active {
+	color:#666;
+	text-decoration:underline;
+	}
+.textwidget {
+	padding-left:10px;
+	margin-bottom:20px;
+	}
+#footer {
+	background:#004990;
+	padding:10px 10px;
+	clear:both;
+	width:940px;
+	color:#FFF;
+	font-size:10px;
+	}
+#footer a {
+	color:#FFF;
+	text-decoration:none;
+	font-size:10px;
+	}
+#footer a:hover, #footer a:active {
+	color:#CCC;
+	text-decoration:underline;
+	}
